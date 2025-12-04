@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Color Grid</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f2f2f2;
+    }
+
+    .grid {
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .box {
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 500;
+        color: white;
+        border-radius: 4px;
+    }
+
+    .c1 { background: #00C2FF; }  
+    .c2 { background: #FF4600; }   
+    .c3 { background: #3C6EFF; }  
+    .c4 { background: #FFD400; color: black; } 
+    .c5 { background: #9034FF; }  
+    .c6 { background: #27C934; }   
+    .c7 { background: #FF8A63; } 
+    .c8 { background: #34B6BD; }  
+    .c9 { background: #7A0000; }  
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+    <div class="box c2">2.</div>
+    <div class="box c3">3.</div>
+    <div class="box c4">4.</div>
+
+    <div class="box c5">5.</div>
+    <div class="box c6">6.</div>
+    <div class="box c1">1.</div>
+
+    <div class="box c7">7.</div>
+    <div class="box c8">8.</div>
+    <div class="box c9">9.</div>
+</div>
+
+</body>
+</html>

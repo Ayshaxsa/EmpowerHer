@@ -1,0 +1,48 @@
+const readline = require("readline");
+
+// Create interface for user input
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Ask user for countdown seconds
+rl.question("Enter number of seconds to count down: ", (input) => {
+  let timeLeft = parseInt(input);
+
+  if (isNaN(timeLeft) || timeLeft <= 0) {
+    console.log("Please enter a valid positive number.");
+    rl.close();
+    return;
+  }
+
+  console.log(`Countdown starting from ${timeLeft} seconds...`);
+  console.log("Press 's' at any time to stop the countdown.\n");
+
+  // Countdown interval
+  const timer = setInterval(() => {
+    console.log(`Time left: ${timeLeft} seconds`);
+    timeLeft--;
+
+    if (timeLeft < 0) {
+      clearInterval(timer);
+      console.log("Countdown Complete!");
+      process.exit();
+    }
+  }, 1000);
+
+  // Delayed check for user keypress using setTimeout
+  setTimeout(() => {
+    process.stdin.setRawMode(true);
+    process.stdin.resume();
+
+    process.stdin.on("data", (key) => {
+      if (key.toString().toLowerCase() === "s") {
+        clearInterval(timer);
+        console.log("\nCountdown Stopped by User.");
+        process.exit();
+      }
+    });
+
+  }, 100); // Slight delay before enabling key listening
+});

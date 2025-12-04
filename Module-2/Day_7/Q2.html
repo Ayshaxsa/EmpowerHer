@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Schedule</title>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #ffffff;
+    }
+
+    .schedule-container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #0d2740;
+    }
+
+    .schedule-grid {
+        display: grid;
+        grid-template-columns: 120px repeat(5, 1fr);
+        gap: 12px;
+        align-items: center;
+    }
+
+    .day {
+        padding: 10px 0;
+        font-weight: 600;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    .monday, .wednesday, .friday {
+        background: #f7c6df;
+    }
+
+    .tuesday, .thursday {
+        background: #f8e79c;
+    }
+
+    .time {
+        background: #bfe8f7;
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+
+    .cell {
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .pink {
+        background: #f7c6df;
+    }
+
+    .yellow {
+        background: #f8e79c;
+    }
+
+    .note {
+        margin-top: 30px;
+        background: #bfe8f7;
+        padding: 12px;
+        border-radius: 20px;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        padding-left: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="schedule-container">
+    <h1 class="title">Weekly schedule ✨</h1>
+
+    <div class="schedule-grid">
+        <div class="time-header"></div>
+        <div class="day monday">Monday</div>
+        <div class="day tuesday">Tuesday</div>
+        <div class="day wednesday">Wednesday</div>
+        <div class="day thursday">Thursday</div>
+        <div class="day friday">Friday</div>
+        
+        <div class="time">08:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">09:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">10:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">11:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">12:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">13:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">14:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <div class="time">15:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+
+        <!-- 16:00 -->
+        <div class="time">16:00</div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+        <div class="cell yellow"></div>
+        <div class="cell pink"></div>
+    </div>
+
+    <div class="note">Note:</div>
+</div>
+
+</body>
+</html>

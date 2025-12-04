@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <style>
+        .product-card {
+            width: 260px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .wishlist {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 22px;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin: 12px 0 4px;
+            font-weight: 600;
+        }
+
+        .product-subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .rating-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            background: #28a745;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .rating-count {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .assured {
+            background: #e3f3ff;
+            color: #007bff;
+            padding: 2px 6px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        .price-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .discount {
+            color: #28a745;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .bank-offer {
+            margin-top: 8px;
+            color: #007b00;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <span class="wishlist">♡</span>
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT7RqSJXG7yL8UW6jYmiA3HzlDsLGqcKVIibE3_h5RmBYnnTTfD8CUa-YRGf8rbScExiX_U0zMD29FrEwhoCe5upmddtIA_iocMKcF4rc7iLv54rkLAieXXiQ" alt="Product Image" class="product-img">
+        <h3 class="product-title">SAMSUNG Galaxy Watch6 LTE</h3>
+        <p class="product-subtitle">Graphite Strap, 44mm</p>
+        <div class="rating-row">
+            <span class="rating">4.3 ★</span>
+            <span class="rating-count">(973)</span>
+            <span class="assured">Assured</span>
+        </div>
+        <div class="price-row">
+            <span class="price">₹18,999</span>
+            <span class="old-price">₹41,999</span>
+            <span class="discount">54% off</span>
+        </div>
+        <p class="bank-offer">Bank Offer</p>
+        </div>
+</body>
+</html>
