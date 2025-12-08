@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Book Management App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Add New Book</h2>
+
+            <form id="addBookForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="price" placeholder="Price" required>
+                <input type="text" id="imageURL" placeholder="Cover Image URL" required>
+
+                <button type="submit">Add Book</button>
+            </form>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h1>Book Collection</h1>
+
+            <div id="booksContainer" class="books-grid"></div>
+        </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
